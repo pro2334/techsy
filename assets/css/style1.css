@@ -1,0 +1,116 @@
+
+.wrapper {
+  margin-top: 100px;
+  width: 95%;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #6759ff;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: hsl(0, 0%, 17%);
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+.button-value {
+  margin-left: 30px;
+  border-radius: 0.25em;
+  background-color: transparent;
+  color: hsl(0, 0%, 21%);
+  cursor: pointer;
+  display: inline-block;
+}
+.h3-catolog{
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.active {
+  background-color: hsl(0, 0%, 21%);
+  color: #ffffff;
+}
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.card {
+  width: 250px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px grey;
+  display:  flex;
+  flex-direction: column;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.2s;
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+.card:hover{
+  box-shadow: 4px 8px 16px grey;
+}
+.product-name{
+  font-size: 20px;
+  font-weight: var(--font-bold)
+}
+h6{
+  font-size: 15px;
+  color: black;
+}
+
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+
+.hide {
+  display: none;
+}
+.btn-price{
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: hsl(0, 0%, 17%);
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-right: 15px;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+.scroll-header {
+    background-color: white;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .10);
+}
+.btn:hover{
+  color:white;
+}
+.
